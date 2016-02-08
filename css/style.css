@@ -1,0 +1,200 @@
+body {
+  padding: 50px 0;
+  background: #262626;
+  font-family: 'Oswald', sans-serif;
+}
+
+.action-btn, .video__player .clips__head--add .modal-content .modal-footer button, .video__player .clips .clip__edit, .video__player .clips .clip__edit--collapse .save {
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.input-field, .video__player .clips__head--add .modal-content .modal-body input, .video__player .clips .clip__edit--collapse input {
+  border-radius: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+}
+
+.page__header {
+  padding: 30px 0;
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.video__player {
+  display: flex;
+  flex-flow: row wrap;
+}
+.video__player--upload {
+  width: 70%;
+  background: black;
+  max-height: 500px;
+}
+.video__player--upload video {
+  height: 500px;
+}
+.video__player .clips {
+  width: 30%;
+  background: #1a1a1a;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.video__player .clips__head {
+  color: white;
+  font-weight: 400;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-bottom: 2px solid #fb4428;
+}
+.video__player .clips__head--add .btn-link {
+  color: #5cb85c;
+  line-height: 0;
+  outline: 0;
+  padding: 0;
+}
+.video__player .clips__head--add .btn-link i {
+  font-size: 20px;
+}
+.video__player .clips__head--add .btn-link:hover {
+  color: #449d44;
+  text-decoration: none;
+}
+.video__player .clips__head--add .modal-content {
+  background: #fb4428;
+  border-radius: 0;
+  color: white;
+}
+.video__player .clips__head--add .modal-content .modal-header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 0;
+}
+.video__player .clips__head--add .modal-content .modal-header .modal-title {
+  font-size: 36px;
+}
+.video__player .clips__head--add .modal-content .modal-header .close {
+  color: white;
+  opacity: .4;
+  font-weight: 100;
+  padding: 0;
+  line-height: 0;
+}
+.video__player .clips__head--add .modal-content .modal-header .close:hover {
+  opacity: 1;
+}
+.video__player .clips__head--add .modal-content .modal-body label {
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.video__player .clips__head--add .modal-content .modal-body input {
+  padding: 30px 15px;
+  font-size: 20px;
+  color: white;
+}
+.video__player .clips__head--add .modal-content .modal-body ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #cccccc;
+}
+.video__player .clips__head--add .modal-content .modal-body ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc;
+}
+.video__player .clips__head--add .modal-content .modal-body :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #cccccc;
+}
+.video__player .clips__head--add .modal-content .modal-body :-moz-placeholder {
+  /* Firefox 18- */
+  color: #cccccc;
+}
+.video__player .clips__head--add .modal-content .modal-footer {
+  border-top: 0;
+}
+.video__player .clips .clip {
+  margin: 10px 0;
+  padding: 15px;
+}
+.video__player .clips .clip:nth-child(even) {
+  background: #262626;
+}
+.video__player .clips .clip__name {
+  color: white;
+  font-size: 18px;
+  outline: none;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.video__player .clips .clip__play {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-size: 40px;
+  margin: 15px 0;
+  border: 0;
+  outline: none;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0px 0px 10px white;
+}
+.video__player .clips .clip__play:hover {
+  color: white;
+}
+.video__player .clips .clip__edit--collapse {
+  margin-top: 15px;
+}
+.video__player .clips .clip__edit--collapse label {
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.video__player .clips .clip__edit--collapse button {
+  width: 100%;
+}
+.video__player .clips .clip__edit--collapse button i {
+  margin-right: 5px;
+}
+.video__player .clips .clip__edit--collapse .save {
+  color: #5cb85c;
+  border: 1px solid #5cb85c;
+}
+.video__player .clips .clip__edit--collapse .save:hover {
+  color: white;
+  text-decoration: none;
+  background: #5cb85c;
+}
+.video__player .clips .clip .delete {
+  color: #d9534f;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  transition-duration: 2s;
+}
+.video__player .clips .clip .delete:hover {
+  text-decoration: none;
+  background: #d9534f;
+  color: white;
+  border: 1px solid #d9534f;
+  transition-duration: 2s;
+}
+
+@media (max-width: 992px) {
+  .video__select {
+    margin: 0 auto;
+  }
+  .video__player {
+    flex-flow: column wrap;
+  }
+  .video__player--upload, .video__player .clips {
+    width: 100%;
+  }
+  .video__player--upload video, .video__player .clips video {
+    height: 100%;
+  }
+}
